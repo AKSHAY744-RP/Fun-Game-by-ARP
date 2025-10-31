@@ -1,13 +1,32 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #1e1e2f, #282846);
-  color: white;
   text-align: center;
+  color: white;
+}
+
+/* Backgrounds */
+.home-bg {
+  background: url('https://i.imgur.com/4AI3vL7.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+
+.calc-bg {
+  background: url('https://i.imgur.com/hxAO8gC.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+
+.flappy-bg {
+  background: url('https://i.imgur.com/kcyoPGK.jpg') no-repeat center center/cover;
+  height: 100vh;
 }
 
 .container {
-  margin-top: 100px;
+  margin-top: 120px;
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 30px;
+  border-radius: 20px;
 }
 
 button {
@@ -21,7 +40,6 @@ button {
   cursor: pointer;
   transition: 0.3s;
 }
-
 button:hover {
   background: #005BBB;
 }
@@ -29,11 +47,11 @@ button:hover {
 /* Calculator */
 .calculator {
   max-width: 320px;
-  margin: 60px auto;
-  background: black;
+  margin: 80px auto;
+  background: rgba(0, 0, 0, 0.9);
   padding: 20px;
   border-radius: 25px;
-  box-shadow: 0px 0px 20px #000;
+  box-shadow: 0 0 20px #000;
 }
 
 #display {
@@ -61,4 +79,25 @@ button:hover {
 
 .buttons button.equal {
   background: #FF9500;
+}
+
+/* Game */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+canvas {
+  border: 2px solid white;
+  border-radius: 10px;
+  background: #87CEEB;
+}
+
+.scoreboard {
+  margin-top: 10px;
+}
+.scoreboard p {
+  font-size: 20px;
 }
