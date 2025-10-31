@@ -9,9 +9,7 @@ function appendOperator(op) {
 }
 
 function appendDot() {
-  if (!display.value.endsWith(".")) {
-    display.value += ".";
-  }
+  if (!display.value.includes(".")) display.value += ".";
 }
 
 function clearDisplay() {
